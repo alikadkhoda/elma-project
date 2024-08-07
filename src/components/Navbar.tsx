@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
-import { FaFacebook, FaTwitter } from "react-icons/fa";
+import {FaFacebook, FaTwitter } from "react-icons/fa";
+import SideNav from "./SideNav";
 
 export default function Navbar() {
   // const list = ['خانه','پروژها','خدمات','درباره','دراپ','تماس با ما']
@@ -25,13 +26,13 @@ export default function Navbar() {
           setNav(false)
         }
       }, [scrollTop]);
-      
+
   return (
-    <div className={`fixed w-full top-0 z-10 opacity-100 flex justify-between items-center p-6 ${nav?'bg-slate-900':''}`}>
+    <div className={`fixed w-full top-0 z-10 opacity-100 flex justify-between items-center p-4 ${nav?'bg-slate-900':''}`}>
         <div>
-            <img className="w-[108px] h-[32px]" src="https://ormazds.ir/templates/006elma/images/logo.svg" alt="logo" />
+            <img className="w-24 h-6 sm:w-[108px] sm:h-8" src="https://ormazds.ir/templates/006elma/images/logo.svg" alt="logo" />
         </div>
-        <div className="flex items-center text-white">
+        <div className="hidden sm:flex items-center text-white">
         <ul className="flex gap-4">
             <li><a className="hover:text-lime-500 transition-all" href="/">خانه</a></li>
             <li><a className="hover:text-lime-500 transition-all" href="#projects">پروژه‌ها</a></li>
@@ -56,6 +57,7 @@ export default function Navbar() {
             <FaTwitter size={20} className="fill-lime-500 cursor-pointer hover:fill-white transition-colors" />
         </div>
         </div>
+        <SideNav />
     </div>
   )
 }
