@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    @font-face {
+        font-family: IRANSans;
+        src: url('./assets/fonts/IRANSansWeb.ttf');
+    }
+
+    body{
+        font-family: IRANSans, sans-serif
+    }
+
+    button{
+        @apply border rounded-[4px] transition-colors
+    }
+}
+
+@layer utilities {
+
+    .sub-menu:hover ul {
+        display: block;
+    }
+
+    .dropdown:hover .dropdown-content {
+        @apply block;
+        animation: dropdown 0.3s ease-in-out;
+      }
+
+    @keyframes dropdown {
+        0% {
+          transform: translateY(-10px);
+          opacity: 0;
+        }
+        100% {
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+}
