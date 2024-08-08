@@ -10,7 +10,7 @@ export default function SideNav() {
     <>
       {/* Hamberger Icon */}
       <div onClick={handleNav} className="sm:hidden z-10">
-        <FaBars size={20} className="mr-4 cursor-pointer" />
+        <FaBars size={20} className="mr-4 cursor-pointer fill-white" />
       </div>
 
       {/* Mobile Menu */}
