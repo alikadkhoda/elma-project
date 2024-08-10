@@ -28,7 +28,7 @@ export default function Projects() {
         <div
           key={item.id}
           className="grid grid-cols-1 lg:grid-cols-2 space-y-10 lg:space-y-0 items-center py-32 odd:bg-gray-200">
-          <div className={`px-10 space-y-5 text-center sm:text-justify ${index%2 === 0 ? 'lg:order-last':''}`}>
+          <div className={`px-20 space-y-5 text-center sm:text-justify ${index%2 === 0 ? 'lg:order-last':''}`}>
             <h2 className="font-bold text-3xl">{item.header}</h2>
             <p>{item.content}</p>
             <span className="flex items-center justify-center sm:justify-start text-lime-500 gap-2">
@@ -47,7 +47,7 @@ export default function Projects() {
               </svg>
             </span>
           </div>
-          <div className="px-24 m-auto">
+          <div className="px-20 m-auto">
             <img src={item.image} alt="image project" />
           </div>
         </div>
