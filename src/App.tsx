@@ -3,6 +3,7 @@ import Introduction from "./components/Introduction"
 import Navbar from "./components/Navbar"
 import ProductionProcess from "./components/ProductionProcess"
 import Projects from "./components/Projects"
+import Services from "./components/Services"
 
 function App() {
 
@@ -13,6 +14,7 @@ function App() {
      <Introduction />
      <Projects />
      <ProductionProcess />
+     <Services />
     </>
   )
 }
