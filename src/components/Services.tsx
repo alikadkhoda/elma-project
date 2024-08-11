@@ -39,11 +39,11 @@ export default function Services() {
   
   return (
     <div className="container m-auto px-10 py-40">
-        <div className="text-center space-y-10 md:px-40 mb-10">
+        <div className="text-center space-y-10 md:px-40 mb-16">
             <h2 className="font-bold text-3xl sm:text-4xl">خدمات توسعه محصول</h2>
             <p>برنامه ریزیلورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است</p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 px-10 text-justify gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 text-justify gap-6">
             {listService.map((item,index)=>{
                 return (
                     <ServiceItem key={index} image={item.svgIcon} header={item.header} content={item.content} />
