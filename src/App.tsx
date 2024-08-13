@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar"
 import ProductionProcess from "./components/ProductionProcess"
 import Projects from "./components/Projects"
 import Services from "./components/Services"
+import Slider from "./components/Slider"
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
      <ProductionProcess />
      <Services />
      <About />
+     <Slider />
     </>
   )
 }

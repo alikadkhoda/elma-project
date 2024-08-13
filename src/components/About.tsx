@@ -8,7 +8,7 @@ export default function About() {
                 <h2 className="font-bold text-3xl sm:text-4xl text-white text-center">چرا باید با ما کار کنید</h2>
                 <hr className="w-24 border-t-2 m-auto mt-5 "/>
             </div>
-            <div className="grid grid-cols-2 text-white mt-16">
+            <div className="grid grid-cols-1 md:grid-cols-2 space-y-10 md:space-y-0 text-white mt-16">
                 <div className="pl-16 space-y-10">
                     <div>
                         <h5 className="font-bold text-xl">۱.تخصص در محصولات دیجیتال</h5>
@@ -43,7 +43,6 @@ export default function About() {
                 </div>
             </div>
         </div>
-        {/* <AnimationCounter from={0} to={100} /> */}
     </div>
   )
 }
