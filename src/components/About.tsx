@@ -2,7 +2,7 @@ import AnimationCounter from "./AnimationCounter";
 
 export default function About() {
   return (
-    <div className="w-full bg-[url(https://ormazds.ir/templates/006elma/images/about-background.jpg)] bg-center bg-cover">
+    <div id="about" className="w-full bg-[url(https://ormazds.ir/templates/006elma/images/about-background.jpg)] bg-center bg-cover">
         <div className="container m-auto px-10 py-40">
             <div>
                 <h2 className="font-bold text-3xl sm:text-4xl text-white text-center">چرا باید با ما کار کنید</h2>
