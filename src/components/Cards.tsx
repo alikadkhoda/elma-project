@@ -7,7 +7,7 @@ export default function Cards() {
             <h2 className="font-bold text-3xl sm:text-4xl">اعضای تیم تخصصی</h2>
             <p>برنامه ریزیلورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است</p>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
             <CardItem img="https://ormazds.ir/templates/006elma/images/team-member-4.jpg" name="توری وایت لانگ" position="توسعه کسب و کار" twitterLink="#twitter" linkedinLink="#linkedin"/>
             <CardItem img="https://ormazds.ir/templates/006elma/images/team-member-4.jpg" name="توری وایت لانگ" position="توسعه کسب و کار" twitterLink="#twitter" linkedinLink="#linkedin"/>
             <CardItem img="https://ormazds.ir/templates/006elma/images/team-member-4.jpg" name="توری وایت لانگ" position="توسعه کسب و کار" twitterLink="#twitter" linkedinLink="#linkedin"/>

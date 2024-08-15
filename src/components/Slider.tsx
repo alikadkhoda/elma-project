@@ -25,7 +25,7 @@ const listSlider = [
 
 export default function Slider() {
   return (
-    <div className="container px-10 py-40 m-auto ">
+    <div className="container sm:px-10 py-40 m-auto ">
       <Swiper
         className="w-full"
         navigation= {true}

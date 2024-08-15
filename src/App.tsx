@@ -1,5 +1,6 @@
 import About from "./components/About"
 import Cards from "./components/Cards"
+import Contact from "./components/Contact"
 import Hero from "./components/Hero"
 import Introduction from "./components/Introduction"
 import Navbar from "./components/Navbar"
@@ -21,6 +22,7 @@ function App() {
      <About />
      <Slider />
      <Cards />
+     <Contact />
     </>
   )
 }

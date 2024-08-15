@@ -23,7 +23,7 @@ export default function About() {
                         <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است</p>
                     </div>
                 </div>
-                <div className="grid grid-cols-2 m-auto gap-12">
+                <div className="grid grid-cols-1 sm:grid-cols-2 m-auto gap-12">
                     <div>
                         <AnimationCounter from={0} to={231} />
                         <div className="text-center text-sm">مشتریان خوشحال</div>
