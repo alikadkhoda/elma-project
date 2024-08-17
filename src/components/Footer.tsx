@@ -6,8 +6,8 @@ import { PiPinterestLogo } from "react-icons/pi";
 export default function Footer() {
   return (
     <div className="pt-24 pb-8 bg-slate-950">
-      <div className="container m-auto px-10">
-        <div className="grid grid-cols-1 sm:grid-cols-3">
+      <div className="container m-auto px-10 sm:px-2 xl:px-10">
+        <div className="grid grid-cols-1 lg:grid-cols-3 space-y-10 lg:space-y-0">
           <div>
             <h6 className="text-gray-300 font-bold mb-4">درباره ما</h6>
             <p className="text-gray-300 text-sm">
@@ -15,12 +15,12 @@ export default function Footer() {
               استفاده از طراحان گرافیک است
             </p>
           </div>
-          <div className="pr-10">
+          <div className="xl:pr-10">
             <h6 className="text-gray-300 font-bold mb-4">پیوندها</h6>
             <div className="text-gray-300">
               <ul className="flex text-sm">
-                <li>مهم:</li>
-                <li className="mr-1 hover:text-white transition-colors"><a href="#">شرایط و ضوابط،</a></li>
+                  مهم:
+                <li className="mr-1 max-w-full hover:text-white transition-colors"><a href="#">شرایط و ضوابط،</a></li>
                 <li className="mr-1 hover:text-white transition-colors"><a href="#">سیاست حفظ حریم خصوصی</a></li>
               </ul>
             </div>
@@ -60,7 +60,7 @@ export default function Footer() {
             <p className="text-gray-300 text-sm">دوست داریم بیشتر از شما بشنویم: aads234@gmail.com</p>
           </div>
         </div>
-        <div className="text-center text-gray-300 mt-4">2024 kadkhoda Inc ©</div>
+        <div className="text-center text-gray-300 mt-10"> 2024 kadkhoda Inc ©</div>
       </div>
     </div>
   );
