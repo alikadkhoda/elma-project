@@ -20,7 +20,7 @@ export default function Contact() {
                         <input className="pr-4 py-4 rounded-[4px] bg-[#4d475c] placeholder-slate-400 focus:outline-none" type="text" name="name" id="name" placeholder="نام" />
                         <input className="pr-4 py-4 rounded-[4px] bg-[#4d475c] placeholder-slate-400 focus:outline-none" type="text" name="email" id="email" placeholder="ایمیل" />
                         <textarea className="pr-4 py-4 rounded-[4px] bg-[#4d475c] placeholder-slate-400 focus:outline-none" cols={30} rows={8} placeholder="پیام"></textarea>
-                        <input className="bg-lime-500 py-3 font-bold rounded-[4px]" type="submit" value={'ارسال'} />
+                        <input className="bg-lime-500 py-3 font-bold rounded-[4px] border border-lime-500 hover:text-lime-500 hover:bg-transparent transition-colors" type="submit" value={'ارسال'} />
                     </form>
                 </div>
             </div>
