@@ -1,6 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 import Layout from "../layouts/Layout";
 import Home from "../pages/Home";
+import DetailPaper from "../pages/DetailPaper";
 
 const routes = createBrowserRouter([
     {
@@ -10,6 +11,10 @@ const routes = createBrowserRouter([
             {
                 path: '/',
                 element: <Home />
+            },
+            {
+                path: '/detail-paper',
+                element: <DetailPaper />
             }
         ]
     }

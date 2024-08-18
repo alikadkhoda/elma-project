@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import {FaFacebook, FaTwitter } from "react-icons/fa";
 import SideNav from "./SideNav";
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
   // const list = ['خانه','پروژها','خدمات','درباره','دراپ','تماس با ما']
@@ -34,7 +35,7 @@ export default function Navbar() {
         </div>
         <div className="hidden sm:flex items-center text-white">
         <ul className="flex gap-4">
-            <li><a className="hover:text-lime-500 transition-all" href="/">خانه</a></li>
+            <li><Link className="hover:text-lime-500 transition-all" to={"/"}>خانه</Link></li>
             <li><a className="hover:text-lime-500 transition-all" href="#projects">پروژه‌ها</a></li>
             <li><a className="hover:text-lime-500 transition-all" href="#services">خدمات</a></li>
             <li><a className="hover:text-lime-500 transition-all" href="#about">درباره</a></li>
@@ -45,12 +46,12 @@ export default function Navbar() {
                 </svg>
               </a>
                 <ul className="bg-slate-900 absolute hidden dropdown-content -mr-2 divide-y-2 divide-slate-700 rounded-md">
-                  <li className="text-white px-4 py-2 hover:text-lime-500 transition-colors"><a href="#">جزییات مقاله</a></li>
+                  <li className="text-white px-4 py-2 hover:text-lime-500 transition-colors"><Link to={'/detail-paper'}>جزییات مقاله</Link></li>
                   <li className="text-white px-4 py-2 hover:text-lime-500 transition-colors"><a href="#">شرایط و ضوابط</a></li>
                   <li className="text-white px-4 py-2 hover:text-lime-500 transition-colors"><a href="#">سیاست حفظ حریم خصوصی</a></li>
                 </ul>
               </li>
-            <li><a className="hover:text-lime-500 transition-all" href="#contact-us">تماس با ما</a></li>
+            <li><a className="hover:text-lime-500 transition-all" href="/#contact-us">تماس با ما</a></li>
         </ul>
         <div className="flex justify-between gap-1 mr-10">
             <FaFacebook size={20} className="fill-lime-500 cursor-pointer hover:fill-white transition-colors" />
