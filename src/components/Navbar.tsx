@@ -48,7 +48,7 @@ export default function Navbar() {
                 <ul className="bg-slate-900 absolute hidden dropdown-content -mr-2 divide-y-2 divide-slate-700 rounded-md">
                   <li className="text-white px-4 py-2 hover:text-lime-500 transition-colors"><Link to={'/detail-paper'}>جزییات مقاله</Link></li>
                   <li className="text-white px-4 py-2 hover:text-lime-500 transition-colors"><Link to={'/condition'}>شرایط و ضوابط</Link></li>
-                  <li className="text-white px-4 py-2 hover:text-lime-500 transition-colors"><a href="#">سیاست حفظ حریم خصوصی</a></li>
+                  <li className="text-white px-4 py-2 hover:text-lime-500 transition-colors"><Link to={"/privacy-policy"}>سیاست حفظ حریم خصوصی</Link></li>
                 </ul>
               </li>
             <li><a className="hover:text-lime-500 transition-all" href="/#contact-us">تماس با ما</a></li>

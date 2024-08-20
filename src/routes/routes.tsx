@@ -3,6 +3,7 @@ import Layout from "../layouts/Layout";
 import Home from "../pages/Home";
 import DetailPaper from "../pages/DetailPaper";
 import Condition from "../pages/Condition";
+import PrivacyPolicy from "../pages/PrivacyPolicy";
 
 const routes = createBrowserRouter([
     {
@@ -20,6 +21,10 @@ const routes = createBrowserRouter([
             {
                 path: '/condition',
                 element: <Condition />
+            },
+            {
+                path: '/privacy-policy',
+                element: <PrivacyPolicy />
             }
         ]
     }
