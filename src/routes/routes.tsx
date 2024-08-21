@@ -4,11 +4,13 @@ import Home from "../pages/Home";
 import DetailPaper from "../pages/DetailPaper";
 import Condition from "../pages/Condition";
 import PrivacyPolicy from "../pages/PrivacyPolicy";
+import NotFound from "../pages/NotFound";
 
 const routes = createBrowserRouter([
     {
         path: '/',
         element: <Layout />,
+        errorElement: <NotFound />,
         children: [
             {
                 path: '/',

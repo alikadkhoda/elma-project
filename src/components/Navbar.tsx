@@ -7,9 +7,14 @@ export default function Navbar() {
   // const list = ['خانه','پروژها','خدمات','درباره','دراپ','تماس با ما']
     const [scrollTop, setScrollTop] = useState(0);
     const [nav, setNav] = useState(false)
+    const [navId, setNavId] = useState(1)
     const handleScroll = () => {
         setScrollTop(document.documentElement.scrollTop);
       };
+
+    const handleClick = (id:number) => {
+      setNavId(id)
+    }
 
     useEffect(() => {
         window.addEventListener("scroll", handleScroll);
