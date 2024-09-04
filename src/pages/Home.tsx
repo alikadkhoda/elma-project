@@ -1,7 +1,6 @@
 import About from "../components/About";
 import Cards from "../components/Cards";
 import Contact from "../components/Contact";
-import Footer from "../components/Footer";
 import Hero from "../components/Hero";
 import Introduction from "../components/Introduction";
 import ProductionProcess from "../components/ProductionProcess";
