@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { FaBars } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 export default function SideNav() {
   const [showNav, setShowNav] = useState(false);
@@ -24,25 +25,25 @@ export default function SideNav() {
       >
         <ul className="w-full h-full text-center text-gray-300 pt-8">
           <li className="text-xl py-4 hover:text-lime-500 transition-all">
-            <a href="/">خانه</a>
+          <li><Link className="hover:text-lime-500 transition-all" to={"/"}>خانه</Link></li>
           </li>
           <li className="text-xl py-4 hover:text-lime-500 transition-all">
-            <a href="#gallery">پروژه‌ها</a>
+          <li><Link to="/?scroll=projects" className="hover:text-lime-500 transition-all">پروژه‌ها</Link></li>
           </li>
           <li className="text-xl py-4 hover:text-lime-500 transition-all">
-            <a href="#deals">خدمات</a>
+          <li><Link to="/?scroll=services" className="hover:text-lime-500 transition-all">خدمات</Link></li>
           </li>
           <li className="text-xl py-4 hover:text-lime-500 transition-all">
-            <a href="#contact">درباره</a>
+          <li><Link to="/?scroll=about" className="hover:text-lime-500 transition-all">درباره</Link></li>
           </li>
           <li className="text-xl py-4 hover:text-lime-500 transition-all">
-            <a href="#contact">جزییات مقاله</a>
+          <Link to={'/detail-paper'}>جزییات مقاله</Link>
           </li>
           <li className="text-xl py-4 hover:text-lime-500 transition-all">
-            <a href="#contact">شرایط و ضوابط</a>
+          <Link to={'/condition'}>شرایط و ضوابط</Link>
           </li>
           <li className="text-xl py-4 hover:text-lime-500 transition-all">
-            <a href="#contact">سیاست حفظ حریم خصوصی</a>
+          <Link to={"/privacy-policy"}>سیاست حفظ حریم خصوصی</Link>
           </li>
           <li className="text-xl py-4 hover:text-lime-500 transition-all">
             <a href="#contact">تماس با ما</a>

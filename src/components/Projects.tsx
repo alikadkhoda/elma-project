@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const projectItems = [
   {
     id: "1",
@@ -31,7 +33,7 @@ export default function Projects() {
           <div className={`px-20 space-y-5 text-center sm:text-justify ${index%2 === 0 ? 'lg:order-last':''}`}>
             <h2 className="font-bold text-3xl">{item.header}</h2>
             <p>{item.content}</p>
-            <span className="flex items-center justify-center sm:justify-start text-lime-500 gap-2">
+            <Link className="flex items-center justify-center sm:justify-start text-lime-500 gap-2" to={`/projects/${item.id}`}>
               بیشتر بدانید
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -45,7 +47,7 @@ export default function Projects() {
                   strokeLinejoin="round"
                   d="M6.75 15.75 3 12m0 0 3.75-3.75M3 12h18"/>
               </svg>
-            </span>
+            </Link>
           </div>
           <div className="px-20 m-auto">
             <img src={item.image} alt="image project" />

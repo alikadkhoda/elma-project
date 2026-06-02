@@ -41,9 +41,10 @@ export default function Navbar() {
         <div className="hidden sm:flex items-center text-white">
         <ul className="flex gap-4">
             <li><Link className="hover:text-lime-500 transition-all" to={"/"}>خانه</Link></li>
-            <li><a className="hover:text-lime-500 transition-all" href="#projects">پروژه‌ها</a></li>
-            <li><a className="hover:text-lime-500 transition-all" href="#services">خدمات</a></li>
-            <li><a className="hover:text-lime-500 transition-all" href="#about">درباره</a></li>
+            <li><Link to="/?scroll=projects" className="hover:text-lime-500 transition-all">پروژه‌ها</Link></li>
+            <li><Link to="/?scroll=services" className="hover:text-lime-500 transition-all">خدمات</Link></li>
+            <li><Link to="/?scroll=about" className="hover:text-lime-500 transition-all">درباره</Link></li>
+
             <li className="sub-menu dropdown"><a className="flex items-center gap-2 hover:text-lime-500 transition-all" href="#drop">
                 دراپ
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-3">
@@ -56,7 +57,7 @@ export default function Navbar() {
                   <li className="text-white px-4 py-2 hover:text-lime-500 transition-colors"><Link to={"/privacy-policy"}>سیاست حفظ حریم خصوصی</Link></li>
                 </ul>
               </li>
-            <li><a className="hover:text-lime-500 transition-all" href="/#contact-us">تماس با ما</a></li>
+              <li><Link to="/?scroll=contact-us" className="hover:text-lime-500 transition-all">تماس با ما</Link></li>
         </ul>
         <div className="flex justify-between gap-1 mr-10">
             <FaFacebook size={20} className="fill-lime-500 cursor-pointer hover:fill-white transition-colors" />

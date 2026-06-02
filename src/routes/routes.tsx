@@ -21,6 +21,10 @@ const routes = createBrowserRouter([
                 element: <DetailPaper />
             },
             {
+                path: '/projects/:id',
+                element: <DetailPaper />
+            },
+            {
                 path: '/condition',
                 element: <Condition />
             },
